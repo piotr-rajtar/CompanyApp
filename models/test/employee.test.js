@@ -4,9 +4,6 @@ const mongoose = require('mongoose');
 const e = require('express');
 
 describe('Employee', () => {
-    after(() => {
-        mongoose.models = {};
-    });
 
     const employee = {
         firstName: 'John',
