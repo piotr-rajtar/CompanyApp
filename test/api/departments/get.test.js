@@ -11,8 +11,6 @@ const request = chai.request;
 describe('GET /api/departments', () => {
 
     before(async () => {
-        await Department.deleteMany();
-
         const testDepOne = new Department({ _id: '5d9f1140f10a81216cfd4408', name: 'Department #1' });
         await testDepOne.save();
       
