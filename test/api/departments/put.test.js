@@ -28,7 +28,9 @@ describe('PUT /api/departments', () => {
         expect(res.status).to.be.equal(200);
         expect(res.body).to.be.an('object');
         expect(res.body).to.be.equal(updatedDepartment);
-        expect(updatedDepartment).to.ownProperty.be.null;
+        expect(updatedDepartment).to.not.be.null;
+
+
     });
 
 });
