@@ -24,10 +24,7 @@ describe('PUT /api/departments', () => {
         const updatedDepartment = await Department.findOne({ name: '=Department #1=' });
         expect(res.status).to.be.equal(200);
         expect(res.body).to.be.an('object');
-        expect(res.body).to.be.equal(updatedDepartment);
         expect(updatedDepartment).to.not.be.null;
-
-
     });
 
 });
